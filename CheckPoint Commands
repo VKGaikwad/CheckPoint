@@ -1,1 +1,12 @@
-cpwd_admin list :                   Display the list of Blades running on Device
+cpwd_admin list :                   Display the list of Modules/Process running on Device and the status of the same (Executed & running/Stopped/Terminated)
+cat /var/log/messages               Display the latest logs generated o device
+ls -la /var/log/ | grep messages    Display the list of log messages files created time to time
+cat /var/log/dmesg                  Display logs/information of modules or process at kernal level
+
+ethtool eth1                        Display info about interface card
+ethtool -S eth1                     Display statastics of the NIC interaces including errors
+ethtool -i eth1                     Display driver informations on NIC
+ethtool -p eth1                     Blinks LED for the associated interface
+netstat -i                          Displays the network connections, routing table , interface statistics & multicast membership.
+ifconfig -s
+ip route show                       Displays the list or route availlable 
