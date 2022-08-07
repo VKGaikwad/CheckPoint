@@ -9,4 +9,13 @@ ethtool -i eth1                     Display driver informations on NIC
 ethtool -p eth1                     Blinks LED for the associated interface
 netstat -i                          Displays the network connections, routing table , interface statistics & multicast membership.
 ifconfig -s
-ip route show                       Displays the list or route availlable 
+ip route show                       Displays the list or route availlable
+
+**********************************
+COMMANDS TO VIEW REAL TIME TRAFFIC
+**********************************
+tcpdump net 10.10.10.1 and host 239.0.0.1
+tcpdump host 10.0.10.1 and host 239.0.0.1 and 179
+fw monitor -e "accept host(10.10.10.2) and host(239.0.0.1);"
+fw ctl zdebug + drop | 239.0.0.1
+
