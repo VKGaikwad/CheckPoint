@@ -1,3 +1,7 @@
+*****************
+GENERIC COMMANDS 
+*****************
+
 cpwd_admin list :                   Display the list of Modules/Process running on Device and the status of the same (Executed & running/Stopped/Terminated)
 cat /var/log/messages               Display the latest logs generated o device
 ls -la /var/log/ | grep messages    Display the list of log messages files created time to time
@@ -46,10 +50,15 @@ VSX Commands
 **************
 Note: Some of these commands might be service disruptive, meaning they may cause a temporary interruption of service
 
+vsx_status: This command is used to display the status of a specific Virtual System, including uptime, and resource utilization.
+vsx_list: This command is used to display a list of all Virtual Systems.
+vsx_statistics: This command is used to display various statistics for a Virtual System, including resource utilization, number of connections, and more.
+
+Below commands might be service disruptive
+------------------------------------------
 vsx_util: This is a utility that provides various functions to manage the VSX environment, including status, start, stop, and syncing.
 vsx_stop: This command is used to stop a specific Virtual System.
 vsx_start: This command is used to start a specific Virtual System.
-vsx_status: This command is used to display the status of a specific Virtual System, including uptime, and resource utilization.
 vsx_sync: This command is used to synchronize the configuration of two Virtual Systems.
 vsx_export: This command is used to export the configuration of a Virtual System to a file.
 vsx_import: This command is used to import the configuration of a Virtual System from a file.
@@ -58,5 +67,4 @@ vsx_delete: This command is used to delete a specific Virtual System.
 vsx_create: This command is used to create a new Virtual System.
 vsx_rename: This command is used to rename a Virtual System.
 vsx_modify: This command is used to modify the configuration of a Virtual System.
-vsx_list: This command is used to display a list of all Virtual Systems.
-vsx_statistics: This command is used to display various statistics for a Virtual System, including resource utilization, number of connections, and more.
+
