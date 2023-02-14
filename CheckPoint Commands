@@ -23,6 +23,30 @@ tcpdump host 10.0.10.1 and host 239.0.0.1 and 179
 fw monitor -e "accept host(10.10.10.2) and host(239.0.0.1);"
 fw ctl zdebug + drop | grep 239.0.0.1
 
+******************
+CP Commands
+******************
+cpconfig: This command displays the current configuration of the firewall.
+cphaprob: This command is used to monitor the state of Check Point High Availability (HA) cluster members.
+cphaprob -stat: This option with the cphaprob command displays the state of the Check Point HA cluster members in a table format.
+cpinfo: This command is used to gather information about the Check Point security gateway, such as installed licenses, OS information, and kernel information.
+cplic print: This command is used to display information about the licenses installed on the firewall.
+cprestart: This command is used to restart the Check Point firecall and its processes.
+cprid_util: This command is used to manage the firewall's cluster members.
+cprid_admin: This command is used to perform administrative tasks for the firewall cluster.
+cprid_control: This command is used to control the firewall cluster.
+cprid_monitor: This command is used to monitor the firewall cluster.
+cpstart: This command is used to start the Check Point firewall and its processes.
+
+cpstat: This command is used to display the current status of the Check Point firewall and its processes.
+cpstop: This command is used to stop the Check Point firewall and its processes.
+cptest: This command is used to test the connectivity between the firewall and its network components.
+cphastop: This command is used to stop the Check Point HA cluster members.
+
+cpwd_admin: This command is used to manage the passwords for the Check Point firewall.
+cpwd_gen: This command is used to generate password hashes for use with Check Point firewall authentication.
+cpwd_util: This command is used to manage the password utilities for the Check Point firewall.
+
 *************
 CPHA Commands
 ***************
