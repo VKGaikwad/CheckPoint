@@ -30,17 +30,24 @@ cpconfig: This command displays the current configuration of the firewall.
 cphaprob: This command is used to monitor the state of Check Point High Availability (HA) cluster members.
 cphaprob -stat: This option with the cphaprob command displays the state of the Check Point HA cluster members in a table format.
 cpinfo: This command is used to gather information about the Check Point security gateway, such as installed licenses, OS information, and kernel information.
+
 cplic print: This command is used to display information about the licenses installed on the firewall.
-cprestart: This command is used to restart the Check Point firecall and its processes.
+
 cprid_util: This command is used to manage the firewall's cluster members.
 cprid_admin: This command is used to perform administrative tasks for the firewall cluster.
 cprid_control: This command is used to control the firewall cluster.
 cprid_monitor: This command is used to monitor the firewall cluster.
-cpstart: This command is used to start the Check Point firewall and its processes.
 
-cpstat: This command is used to display the current status of the Check Point firewall and its processes.
-cpstop: This command is used to stop the Check Point firewall and its processes.
 cptest: This command is used to test the connectivity between the firewall and its network components.
+cpstat: This command is used to display the current status of the Check Point firewall and its processes.
+
+
+---
+Note: Some of these commands might be service disruptive, meaning they may cause a temporary interruption of service
+---
+cprestart: This command is used to restart the Check Point firecall and its processes.
+cpstart: This command is used to start the Check Point firewall and its processes.
+cpstop: This command is used to stop the Check Point firewall and its processes.
 cphastop: This command is used to stop the Check Point HA cluster members.
 
 cpwd_admin: This command is used to manage the passwords for the Check Point firewall.
@@ -91,4 +98,12 @@ vsx_delete: This command is used to delete a specific Virtual System.
 vsx_create: This command is used to create a new Virtual System.
 vsx_rename: This command is used to rename a Virtual System.
 vsx_modify: This command is used to modify the configuration of a Virtual System.
+
+====
+MDS
+====
+
+mds stat
+mdsevv <DMS NAME/IP ADDRESS>
+
 
