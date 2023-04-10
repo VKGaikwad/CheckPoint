@@ -107,3 +107,19 @@ mds stat
 mdsevv <DMS NAME/IP ADDRESS>
 
 
+=========
+Maesro Commands
+================
+sx_api_ports_dump.py                 : Display the connectivity status of the Maestro ports to Other Devices
+lldpctl                              : Display the detail of device connected at rempte end of Maestro port if lldp is active on devices
+Show maestro port 1/1/1 admin-state  : Display if the port is administratively made off/on
+Show maestro port 1/1/1 type         : Display the type of port define at admistrative level , can be changed as required
+asg-daig verify                      : Collect and Display the diagnostic information about the system.
+asg stat -v                          : Display the Chassis state
+asg monitor                          : Display the Chassis state
+mac_address -v                       : Verify the Mac-address table consisitency on all vaillable gateways
+mlxlink -d /dev/mst/mt52100_pci_cr0 -p 48/1 -m : show the connectivity status and verifiction of port number 48
+orch_stat                            : 
+orch_stat -p
+
+
