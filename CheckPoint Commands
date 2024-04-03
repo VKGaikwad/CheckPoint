@@ -2,6 +2,10 @@
 GENERIC COMMANDS 
 *****************
 
+Show asset all
+show asset network
+
+
 cpwd_admin list :                   Display the list of Modules/Process running on Device and the status of the same (Executed & running/Stopped/Terminated)
 cat /var/log/messages               Display the latest logs generated o device
 ls -la /var/log/ | grep messages    Display the list of log messages files created time to time
