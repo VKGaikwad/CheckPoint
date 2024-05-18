@@ -23,9 +23,15 @@ ip route show                       Displays the list or route availlable
 COMMANDS TO VIEW REAL TIME TRAFFIC
 **********************************
 tcpdump net 10.10.10.1 and host 239.0.0.1
-tcpdump host 10.0.10.1 and host 239.0.0.1 and 179
-fw monitor -e "accept host(10.10.10.2) and host(239.0.0.1);"
+tcpdump (host 10.0.10.1 or host 239.0.0.1) and 179
+tcpdump src 10.0.10.1 and dst 239.0.0.1 and 443
+fw monitor -e "accept host(10.10.10.2) and host(239.0.0.1)"
 fw ctl zdebug + drop | grep 239.0.0.1
+
+Resourse realted Cmds
+=====================
+fw tab -t connections : To Identify connection limit
+top 
 
 ******************
 CP Commands
