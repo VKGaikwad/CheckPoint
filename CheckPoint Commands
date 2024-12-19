@@ -11,34 +11,20 @@ chgrp group "File_Name"               change group ownership
 chmod permission "File_Name"          change file permissions 
 
 show commands                   Shows all commands
-show commands feature arp                    Show commands feature such as ARP
-show commands op Display Commands for OP
-show commands op show feature arp Display Commands for OP and Features
-lock database override Unlock database to get read write access
-unlock database Unlock database to get read write access
-set expert-password Set Expert mode password
-save config Save the current configuration
-show arp dynamic all Displays the dynamic arp entries
-show bgp stats Shows bgp statistics
-show bgp summary Shows summary information about bgp
-show bonding group Show all bonding groups
-show bridging groups Show all bridging groups
-show backups Shows a list of local backup
+show commands feature arp       Show commands feature such as ARP
+show commands op                Display Commands for OP
 
-show commands Shows all commands
-show commands feature arp Show commands feature such as ARP
-show commands op Display Commands for OP
-show commands op show feature arp Display Commands for OP and Features
-lock database override Unlock database to get read write access
-unlock database Unlock database to get read write access
-set expert-password Set Expert mode password
-save config Save the current configuration
-show arp dynamic all Displays the dynamic arp entries
-show bgp stats Shows bgp statistics
-show bgp summary Shows summary information about bgp
-show bonding group Show all bonding groups
-show bridging groups Show all bridging groups
-show backups Shows a list of local backup
+lock database override          Unlock database to get read write access
+unlock database                 Unlock database to get read write access
+set expert-password             Set Expert mode password
+save config                     Save the current configuration
+show arp dynamic all            Displays the dynamic arp entries
+show bgp stats                  Shows bgp statistics
+show bgp summary                Shows summary information about bgp
+show bonding group              Show all bonding groups
+show bridging groups            Show all bridging groups
+show backups                    Shows a list of local backup
+
 
 
 cpwd_admin list :                   Display the list of Modules/Process running on Device and the status of the same (Executed & running/Stopped/Terminated)
