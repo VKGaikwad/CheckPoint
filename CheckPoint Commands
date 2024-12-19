@@ -1,9 +1,14 @@
 *****************
 GENERIC COMMANDS 
 *****************
-
 Show asset all
 show asset network
+pwd
+touch "File_Name" create File
+md5sum "File_Name" : Md5 check sum value 
+chown user "File_Name" : change file ownership 
+chgrp group "File_Name" : change group ownership 
+chmod permission "File_Name" : change file permissions 
 
 
 cpwd_admin list :                   Display the list of Modules/Process running on Device and the status of the same (Executed & running/Stopped/Terminated)
@@ -112,7 +117,6 @@ vsx_modify: This command is used to modify the configuration of a Virtual System
 ====
 MDS
 ====
-
 mds stat
 mdsevv <DMS NAME/IP ADDRESS>
 
@@ -133,3 +137,11 @@ orch_stat                            :
 orch_stat -p
 
 
+
+============
+
+============
+cpwd_admin :- shows imp cp processor all should renain in "E" State
+ls var/log/ | grep message :- shows log files
+cat var/log/message :- Latest logs from latest file
+cat var/log/dmesg :- kernal logs
