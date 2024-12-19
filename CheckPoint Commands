@@ -23,6 +23,8 @@ ethtool -p eth1                     Blinks LED for the associated interface
 netstat -i                          Displays the network connections, routing table , interface statistics & multicast membership.
 ifconfig -s
 ip route show                       Displays the list or route availlable
+ip route get 10.1.1.1               Displays specific route information 
+cat /proc/sys/net/ipv4/ip_forword   Display if ip forwarding is enabled or not 
 
 **********************************
 COMMANDS TO VIEW REAL TIME TRAFFIC
@@ -36,7 +38,9 @@ fw ctl zdebug + drop | grep 239.0.0.1
 Resourse realted Cmds
 =====================
 fw tab -t connections : To Identify connection limit
-top 
+top :- Top Processes 
+cpview :- versatile output regarding cpu , blades, interface & a lot
+cpview - t :- Output for specific time in past
 
 ******************
 CP Commands
