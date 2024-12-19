@@ -8,7 +8,11 @@ touch "File_Name"                     create File
 md5sum "File_Name"                    Md5 check sum value 
 chown user "File_Name"                change file ownership 
 chgrp group "File_Name"               change group ownership 
-chmod permission "File_Name"          change file permissions 
+chmod permission "File_Name"          change file permissions
+cpwd_admin :-                         shows imp cp processor all should renain in "E" State
+ls var/log/ | grep message :-         shows log files
+cat var/log/message :-                Latest logs from latest file
+cat var/log/dmesg :-                  kernal logs
 
 show commands                   Shows all commands
 show commands feature arp       Show commands feature such as ARP
@@ -245,7 +249,7 @@ mds stat
 mdsevv <DMS NAME/IP ADDRESS>
 
 
-=========
+=================
 Maesro Commands
 ================
 sx_api_ports_dump.py                 : Display the connectivity status of the Maestro ports to Other Devices
@@ -260,12 +264,3 @@ mlxlink -d /dev/mst/mt52100_pci_cr0 -p 48/1 -m : show the connectivity status an
 orch_stat                            : 
 orch_stat -p
 
-
-
-============
-
-============
-cpwd_admin :- shows imp cp processor all should renain in "E" State
-ls var/log/ | grep message :- shows log files
-cat var/log/message :- Latest logs from latest file
-cat var/log/dmesg :- kernal logs
