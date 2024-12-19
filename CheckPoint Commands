@@ -24,105 +24,103 @@ show bgp summary                Shows summary information about bgp
 show bonding group              Show all bonding groups
 show bridging groups            Show all bridging groups
 show backups                    Shows a list of local backup
-show backup status show status of backup or restore operation being performed
-show backup last-successful show the latest successful backup
-show backup logs show the logs of the recent backups/restores performed
-show clock show current clock
-show configuration show configuration
-show-config state shows the state of configuration either saved or unsaved
-show date shows date
-show dns primary shows primary dns server
-show dns secondary shows secondary dns server
-show extended commands shows all extended commands
-show groups shows all user groups
-show hostname show host name
-show inactivity-timeout shows inactivity-timeout settings
-show interfaces shows all interfaces
-show interfaces ethx shows settings related to an interface “x
-show interfaces show detailed information about all interfaces
-show management interface shows management interface configuration
-show ntp active shows ntp status as enabled or disabled
-show ntp servers shows ntp servers
-show ospf database shows ospf database information
-show ospf neighbors shows ospf neighbors information
-show ospf summary shows ospf summary information
-show pbr rules shows policy based routing rules
-show pbr summary shows policy based routing summary information
-show pbr tables show pbr tables
-show route shows routing table
-show routed version shows information about routed version
-show snapshots shows a list of local snapshots
-show snmp agent-version shows whether the version is v1/v2/v3
-show snmp interfaces shows snmp agent interface
-show snmp traps receivers shows snmp trap receivers
-show time shows local machine time
-show timezone show configured timezone
-show uptime show system uptime
-show users show configured users and their homedir, uid/gid and shell
-show user <username> shows settings related to a particular user
-show version all Version related to os edition, kernel version, product etc
+show backup status              show status of backup or restore operation being performed
+show backup last-successful     show the latest successful backup
+show backup logs                show the logs of the recent backups/restores performed
+show clock                      show current clock
+show configuration              show configuration
+show-config state               shows the state of configuration either saved or unsaved
+show date                       shows date
+show dns primary                shows primary dns server
+show dns secondary              shows secondary dns server
+show extended commands          shows all extended commands
+show groups                     shows all user groups
+show hostname                   show host name
+show inactivity-timeout         shows inactivity-timeout settings
+show interfaces                 shows all interfaces
+show interfaces ethx            shows settings related to an interface “x
+show interfaces                 show detailed information about all interfaces
+show management interface       shows management interface configuration
+show ntp active                 shows ntp status as enabled or disabled
+show ntp servers                shows ntp servers
+show ospf database              shows ospf database information
+show ospf neighbors             shows ospf neighbors information
+show ospf summary               shows ospf summary information
+show pbr rules                  shows policy based routing rules
+show pbr summary                shows policy based routing summary information
+show pbr tables                 show pbr tables
+show route                      shows routing table
+show routed version             shows information about routed version
+show snapshots                  shows a list of local snapshots
+show snmp agent-version         shows whether the version is v1/v2/v3
+show snmp interfaces            shows snmp agent interface
+show snmp traps receivers       shows snmp trap receivers
+show time                       shows local machine time
+show timezone                   show configured timezone
+show uptime                     show system uptime
+show users                      show configured users and their homedir, uid/gid and shell
+show user <username>            shows settings related to a particular user
+show version all                Version related to os edition, kernel version, product etc
 
 
-add backup local create and store a backup file
-add snapshot create snapshots 
-add user <username> uid <user-id-value> homedir creates a user
-expert executes system shell
-halt put system to halt
-history shows command history
-quit exits out of a shell
-reboot reboots a system
-restore backup local [value] restores local backup
-rollback reverting the changes made
-set backup restore local <filename> restores a local backup
-set date yyyy-mm-dd sets system date
-set dhcp server enable enable dhcp server
-set dns primary <x.x.x.x> sets primary dns ip address
-set dns secondary <x.x.x.x> sets secondary dns ip address
-set expert-password set or change password 
-set edition default <value> set edition to 32-bit or 64-bit
-set hostname <value> sets system hostname
-set inactivity-timeout <value> sets the inactivity timeout
-set interface ethx ipv4-address x.x.x.x mask-length 24 adds ip address to an interface
-set management interface <interface name> sets an interface as management 
-set message motd value sets message of the day
-set ntp active on/off activates ntp on/off
-set ntp server primary x.x.x.x version <1/2/3/4> sets primary ntp server
-set ntp server secondary x.x.x.x version <1/2/3/4> sets secondary ntp server
-set snapshot revert<filename> revert to the selected snapshot
-set snmp agent on/off sets snmp agent daemon on/off
-set snmp agent-version <value> sets snmp agent version
-set snmp community <value> read-only sets snmp readonly community 
-add snmp interface <interface name> sets snmp agent interface
-set snmp traps receiver <ip address> version v1 
-community value
-specifies trap receiver
-set snmp traps trap <value> set snmp traps
-set static-route x.x.x.x/24 nexthop gateway address x.x.x.x 
-on
-adds specific static route
-set time <value> sets system time
-set time zone <time-zone> sets the time zone
+add backup local                                   create and store a backup file
+add snapshot                                       create snapshots (proper space must be there for snapshots)
+add user <username> uid <user-id-value> homedir    creates a user
+expert                                   executes system shell
+halt                                     put system to halt
+history                                  shows command history
+quit                                     exits out of a shell
+reboot                                    reboots a system
+restore backup local [value]              restores local backup
+rollback                                  reverting the changes made
+set backup restore local <filename>       restores a local backup
+set date yyyy-mm-dd                       sets system date
+set dhcp server enable                    enable dhcp server
+set dns primary <x.x.x.x>                 sets primary dns ip address
+set dns secondary <x.x.x.x>               sets secondary dns ip address
+set expert-password                       set or change password 
+set edition default <value>               set edition to 32-bit or 64-bit
+set hostname <value>                      sets system hostname
+set inactivity-timeout <value>            sets the inactivity timeout
 
-set expert-password Set expert mode password 
-set expert-password hash VALUE Set expert mode password hash
-fw ver Firewall version
-fw getifs List interfaces and IP addresses
-fw ctl iflist Show interface names
-fw stat Firewall status
-cplic print License information
-cpstat fw Show policy name, policy install time and 
-interface table
-cpstat os -f cpu Checkpoint cpu status
-cpstat os -f routing Checkpoint routing table
-route Display IP Routing
-ifconfig Show interfaces details 
-arp -a To check the Layer 2 ARP table
-netstat -r To check the Layer 3 routing table
-cpview Show top style performance counters
-df -h Check hard desk and space 
-netstat -rn Check the routing table
-ping Ping for testing
-fw ctl arp –n Display Proxy ARP entries
+set interface ethx ipv4-address x.x.x.x mask-length 24         adds ip address to an interface
+set management interface <interface name>                      sets an interface as management 
+set message motd value                                         sets message of the day
+set ntp active on/off                                          activates ntp on/off
+set ntp server primary x.x.x.x version <1/2/3/4>               sets primary ntp server
+set ntp server secondary x.x.x.x version <1/2/3/4>             sets secondary ntp server
+set snapshot revert<filename>                                  revert to the selected snapshot
+set snmp agent on/off                                          sets snmp agent daemon on/off
+set snmp agent-version <value>                                 sets snmp agent version
+set snmp community <value> read-only                               sets snmp readonly community 
+add snmp interface <interface name>                                sets snmp agent interface
+
+set snmp traps receiver <ip address> version v1 community value    specifies trap receiver
+set snmp traps trap <value>                                        set snmp traps
+set static-route x.x.x.x/24 nexthop gateway address x.x.x.x on     adds specific static route
+set time <value>                                                   sets system time
+set time zone <time-zone>                                          sets the time zone
+
+set expert-password                  Set expert mode password 
+set expert-password hash VALUE       Set expert mode password hash
+
+fw ver                               Firewall version
+fw getifs                            List interfaces and IP addresses
+fw ctl iflist                        Show interface names
+fw stat                              Firewall status
+cplic print                          License information
+cpstat fw                            Show policy name, policy install time and interface table
+cpstat os -f cpu                     Checkpoint cpu status
+cpstat os -f routing                 Checkpoint routing table
+route                                Display IP Routing
+ifconfig                             Show interfaces details 
+arp -a                               To check the Layer 2 ARP table
+netstat -r                           To check the Layer 3 routing table
+cpview                              Show top style performance counters
+df -h                               Check hard desk and space 
+netstat -rn                         Check the routing table
+ping                                Ping for testing
+fw ctl arp –n                       Display Proxy ARP entries
 
 lock database override
 unlock database
